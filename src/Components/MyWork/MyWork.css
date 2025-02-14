@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.work{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    margin:40px 80px;
+}
+.work-title{
+    font-size: 30px;
+    font-weight: 800;
+}
+.work-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px;
+}
+.work-container img{
+    cursor:pointer;
+    transition:0.4s;
+    width:320px;
+    height:220px;
+    box-sizing: border-box;
+}
+.work-container img:hover{
+    border-radius:10px;
+    transition:0.3s;
+}
