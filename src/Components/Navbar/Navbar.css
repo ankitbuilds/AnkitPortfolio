@@ -19,3 +19,11 @@
     border-radius: 20px;
     background-color: blue;
 }
+.anchor-link{
+    text-decoration: none;
+    color:black;
+    cursor:pointer;
+}
+.anchor-link :hover{
+    transition:0.3s;
+}

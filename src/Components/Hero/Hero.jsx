@@ -3,7 +3,7 @@ import '../Hero/Hero.css';
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id="home" className="hero">
         <img></img>
         <h1>I'm Ankit Mishra, frontend developer</h1>
         <p>I am a frontend developer from California,

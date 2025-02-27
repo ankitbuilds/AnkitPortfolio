@@ -1,0 +1,55 @@
+.main-contact{
+    margin:5%;
+}
+.heading{
+    text-align: center;
+    margin: 5%;
+}
+.contact-content{
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+.left-contact{
+    display:flex;
+    width:50%;
+    align-items: left;
+    flex-direction: column;
+    padding:10px;
+}
+.left-contact p{
+    line-height:1.5;
+}
+.left-contact h1{
+    gap:10px;
+}
+.left-contact span{
+    line-height: 2.5;
+}
+.left-contact span img{
+    align-items:center;
+}
+.right-contact{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    align-items: right;
+    padding:10px;
+    gap:10px;
+}
+.right-contact input{
+    border-radius: 5px;
+    padding:10px;
+    gap:5px;
+    width:80%;
+}
+.right-contact textarea{
+    width:80%;
+    border-radius:5px;
+    gap:5px;
+}
+.contact-submit{
+    width:fit-content;
+    padding:15px;
+    border-radius:10%;
+}
