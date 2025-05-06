@@ -22,7 +22,25 @@
 }
 .connect-me,.my-resume{
     padding: 15px;
-    background-color:blue;
+    background-color:#2391e9;
     font-size:15px;
     border-radius: 10px;
+    cursor:pointer;
+}
+.connect-me span{
+    background-color:#2391e9;
+}
+@media(max-width: 768px){
+    .hero h1{
+        font-size: 20px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+    .connect-me,.my-resume{
+        font-size: 12px;
+        text-align: center;
+        padding:10px;
+    }
+    
 }

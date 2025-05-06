@@ -29,5 +29,31 @@
 }
 .work-container img:hover{
     border-radius:10px;
+    transform:scale(1.05);
     transition:0.3s;
+    cursor:pointer;
+}
+@media(max-width:768px){
+    .work{
+        gap:40px;
+        margin:20px 40px;
+    }
+    .work-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:10px;
+        margin-left:5px;
+        margin-right:5px;
+    }
+    .work-container img{
+        cursor:pointer;
+        transition:0.4s;
+        width:210px;
+        height:140px;
+        box-sizing: border-box;
+    }
+    .work-title{
+        font-size: 15px;
+    }
+    
 }

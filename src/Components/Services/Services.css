@@ -13,7 +13,7 @@
     padding:30px;
     gap:20px;
     border-radius:10px;
-    border:2px solid black;
+    border:2px solid white;
     cursor:pointer;
     transition:0.4s;
 }
@@ -33,3 +33,30 @@
     font-weight:600;
 }
 
+.services-format:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+    cursor:pointer;
+}
+@media(max-width:768px){
+    .services-container{
+        display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+    margin-left:5px;
+    margin-right:5px;
+    }
+    .services-format{
+        padding:10px;
+    }
+    .services-format h2{
+        font-size:18px;
+    }
+    .services-format h3{
+        font-size:16px;
+    }
+    .services{
+        gap:20px;
+    }
+
+}

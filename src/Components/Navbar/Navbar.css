@@ -17,7 +17,7 @@
     font-size: 20px;
     padding: 10px;
     border-radius: 20px;
-    background-color: blue;
+    background-color: #2391e9;
 }
 .anchor-link{
     text-decoration: none;
@@ -26,4 +26,50 @@
 }
 .anchor-link :hover{
     transition:0.3s;
+}
+.nav-mob-close,.nav-mob-open{
+    display:none;
+}
+ .anchor-link span{
+    background-color:#2391e9;
+}
+@media(max-width:768px){
+    .Navbar{
+        margin:20px 40px;
+    }
+    .nav-mob-open{
+        display:block;
+        position:fixed;
+        right:30px;
+    }
+    .nav-mob-close{
+        display:block;
+        position:relative;
+        top:30px;
+        left:290px;
+        width:30px;
+    }
+    .connect{
+        display:none;
+    }
+
+    .Nav-menu{
+        position:fixed;
+        flex-direction: column;
+        align-items: start;
+        z-index:2;
+        transition: right 0.5s;
+        gap:30px;
+        top:0;
+        right:-350px;
+        width:350px;
+        height:100%;
+        background-color: white;
+    }
+    .Nav-menu li{
+        font-size: 22px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap:30px;
+    }
 }
