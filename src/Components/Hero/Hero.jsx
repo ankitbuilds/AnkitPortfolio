@@ -11,9 +11,8 @@ const Hero = () => {
   return (
     <div id="home" className="hero">
         <img src={profile}/>
-        <h1>I'm Ankit Mishra, frontend developer</h1>
-        <p>I am a frontend developer from California,
-             USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.</p>
+        <h1>I'm Ankit Mishra, Software Engineer</h1>
+        <p>Hi, I'm a software engineer with 1.5 years of experience building reliable and scalable web applications. I specialize in HTML, CSS, JS, React JS, Node JS, Express JS, Mongo DB and I enjoy turning complex problems into simple, efficient code. </p>
         <div className="hero-action">
             <div className="connect-me" ><AnchorLink className='anchor-link' href="#contact" offset={50}><span onClick={()=>setMenu("contact")}>Connect With Me</span></AnchorLink></div>
             <div className="my-resume" onClick={handleClick}>My Resume</div>

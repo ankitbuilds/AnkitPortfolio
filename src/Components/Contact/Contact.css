@@ -1,9 +1,13 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
 .main-contact{
     margin:5%;
 }
 .heading{
     text-align: center;
     margin: 5%;
+    font-size: 60px;
 }
 .contact-content{
     display:flex;
@@ -41,12 +45,14 @@
     gap:10px;
 }
 .right-contact input{
+    border:0;
     border-radius: 5px;
     padding:10px;
     gap:5px;
     width:80%;
     background-color: #32323c;
 }
+
 .right-contact textarea{
     width:80%;
     border-radius:5px;
@@ -54,11 +60,12 @@
     background-color: #32323c;
 }
 .contact-submit{
-    cursor:pointer;
-    width:fit-content;
-    padding:15px;
-    border-radius:10%;
-    background-color: #2391e9;
+    border:0;
+    padding: 15px;
+    background-color: #246475;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 @media(max-width: 768px){
     .contact-content{
@@ -72,6 +79,18 @@
         font-size:20px;
     }
     .heading{
-        font-size:28px;
+        font-size:30px;
     }
+}
+@media (min-width: 769px){
+    .contact-submit{
+        width: 25%;
+    }
+}
+.social{
+    margin-top: 5px;
+    gap:15px;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
 }

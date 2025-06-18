@@ -3,6 +3,9 @@ import './Contact.css'
 import pic1 from '../../assets/email.svg'
 import pic2 from '../../assets/phone.svg'
 import pic3 from '../../assets/loc.svg'
+import pic4 from '../../assets/git.png'
+import pic5 from '../../assets/leetcode.png'
+import pic6 from '../../assets/linkedin.png'
 
 const Contact = () => {
 
@@ -42,6 +45,11 @@ const Contact = () => {
             <span><img src={pic1}/>ankitmishra.akmishra@gmail.com</span>
             <span><img src={pic2}/>+91 8081765956</span>
             <span><img src={pic3}/>Lucknow, India</span>
+            <div className="social">
+            <a href="https://github.com/ankitbuilds"><img width="40px" src={pic4}/></a>
+           <a href='https://leetcode.com/u/Ankit_cs/'><img width="40px" src={pic5}/></a>
+            <a href='https://www.linkedin.com/in/ankit-mishra9401/'><img width="40px" src={pic6}/></a>
+            </div>
         </div>
         <form className="right-contact" onSubmit={onSubmit}>
             
@@ -51,7 +59,7 @@ const Contact = () => {
             <input placeholder="Enter Your Email" type="email" />
             <label>Write Your Message Here</label>
             <textarea name="message" rows="8"></textarea>
-            <button type="submit"  className="contact-submit">Submit Now</button>
+            <button id= "new" type="submit"  className="contact-submit">Submit Now</button>
         </form>
 
     

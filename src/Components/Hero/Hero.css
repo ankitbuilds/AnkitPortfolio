@@ -1,9 +1,12 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
 .hero{
     display:flex;
     align-items: center;
     flex-direction: column;
     gap:15px;
-    height:100vh;
+    /* height:100vh; */
 }
 .hero h1{
     margin-bottom:0;
@@ -22,13 +25,13 @@
 }
 .connect-me,.my-resume{
     padding: 15px;
-    background-color:#2391e9;
+    background-color:#246475;
     font-size:15px;
     border-radius: 10px;
     cursor:pointer;
 }
 .connect-me span{
-    background-color:#2391e9;
+    background-color:#246475;
 }
 @media(max-width: 768px){
     .hero h1{
@@ -36,6 +39,7 @@
     }
     .hero p{
         font-size: 16px;
+        width: 75%;
     }
     .connect-me,.my-resume{
         font-size: 12px;

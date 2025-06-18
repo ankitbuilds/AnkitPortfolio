@@ -21,9 +21,11 @@ const Navbar = () => {
         <img src={menu_close} onClick={closeMenu} className="nav-mob-close" alt="" width="15px" height="15px"/>
         <li><AnchorLink className='anchor-link'href="#home" offset={50}><p onClick={()=>setMenu("home")}>Home</p></AnchorLink></li>
         <li><AnchorLink className='anchor-link' href="#about" offset={50}><p onClick={()=>setMenu("about")}>About Me</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' href="#services" offset={50}><p onClick={()=>setMenu("services")}>Services</p></AnchorLink></li>
+        {/* <li><AnchorLink className='anchor-link' href="#services" offset={50}><p onClick={()=>setMenu("services")}>Services</p></AnchorLink></li> */}
         <li><AnchorLink className='anchor-link' href='#work' offset={50}><p onClick={()=>setMenu("portfolio")}>My Work</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' href="#skills" offset={50}><p onClick={()=>setMenu("skills")}>Skills</p></AnchorLink></li>
         <li><AnchorLink className='anchor-link' href="#contact" offset={50}><p onClick={()=>setMenu("contact")}>Contact</p></AnchorLink></li>
+        
       </ul>
       <div className="connect"><AnchorLink className='anchor-link' href="#contact" offset={50}><span onClick={()=>setMenu("contact")}>Connect</span></AnchorLink></div>
     </div>

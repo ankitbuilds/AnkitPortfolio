@@ -7,18 +7,18 @@ const Footer = () => {
         <div className="footer-top">
             <div className="text-left">
                 <h1>Ankit</h1>
-                <p>I am a frontend developer from,
-                 USA with 10 years of experience in companies like Microsoft, Tesla and Apple.</p>
+                <p>I'm a software engineer with 1.5 years of experience
+                     building reliable and scalable web applications.</p>
             </div>
-            <div className="text-right">
+            {/* <div className="text-right">
                 <input className="btn-1" type="email" placeholder="Enter your Email"/>
                 <button className="btn">Subscribe</button>
-            </div>
+            </div> */}
         </div>
         <hr/>
         <div className="footer-bottom">
             <div className="bottom-left">
-            © 2023 Alex Bennett. All rights reserved.
+            © 2025 Ankit Mishra. All rights reserved.
             </div>
             <div className="bottom-right">
                 <ul>
