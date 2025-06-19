@@ -4,7 +4,7 @@ import Services_data from '../../assets/Service_data.js'
 
 const Services = () => {
   return (
-    <div id="services" className="services">
+    <div id="services" className="services"  data-aos="fade-up">
         <div className="services-title">
             <h1>My Services</h1>
 

@@ -1,7 +1,7 @@
 import React, {useState,useRef} from 'react'
 import '../Navbar/Navbar.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import menu_open from '../../assets/menu.png'
+import menu_open from '../../assets/menu2.png'
 import menu_close from '../../assets/close.png'
 
 const Navbar = () => {
@@ -15,8 +15,8 @@ const Navbar = () => {
     menuRef.current.style.right="-350px";
   }
   return (
-    <div className="Navbar">
-      <img src={menu_open} onClick={openMenu} alt="" width="15px" height="15px" className="nav-mob-open"/>
+    <div className="Navbar"  data-aos="fade-up">
+      <img src={menu_open} onClick={openMenu} alt="" width="35px" height="35px" className="nav-mob-open"/>
       <ul ref={menuRef} className="Nav-menu">
         <img src={menu_close} onClick={closeMenu} className="nav-mob-close" alt="" width="15px" height="15px"/>
         <li><AnchorLink className='anchor-link'href="#home" offset={50}><p onClick={()=>setMenu("home")}>Home</p></AnchorLink></li>
@@ -27,7 +27,7 @@ const Navbar = () => {
         <li><AnchorLink className='anchor-link' href="#contact" offset={50}><p onClick={()=>setMenu("contact")}>Contact</p></AnchorLink></li>
         
       </ul>
-      <div className="connect"><AnchorLink className='anchor-link' href="#contact" offset={50}><span onClick={()=>setMenu("contact")}>Connect</span></AnchorLink></div>
+      <div className="connect"><AnchorLink className='anchor-link' href="#contact" offset={50}><span onClick={()=>setMenu("contact")}>Connect With Me</span></AnchorLink></div>
     </div>
   )
 }

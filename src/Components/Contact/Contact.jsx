@@ -32,7 +32,7 @@ const Contact = () => {
         }
       };
   return (
-    <div id="contact" className="main-contact">
+    <div id="contact" className="main-contact"  data-aos="fade-up">
         <h1 className='heading'>Get In Touch</h1>
         <div className='contact-content'>
         <div className="left-contact">

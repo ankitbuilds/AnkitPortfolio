@@ -4,7 +4,7 @@ import image from '../../assets/image_1.jpeg'
 
 const About = () => {
   return (
-    <div id="about" className="about">
+    <div id="about" className="about"  data-aos="fade-up">
         <div className="about-title"><h1>About Me</h1></div>
         <div className='about-section'>
             {/* <div className='about-left'>

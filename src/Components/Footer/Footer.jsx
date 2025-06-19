@@ -3,7 +3,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer"  data-aos="fade-up">
         <div className="footer-top">
             <div className="text-left">
                 <h1>Ankit</h1>

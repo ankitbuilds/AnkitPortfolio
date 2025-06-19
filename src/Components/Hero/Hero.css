@@ -46,5 +46,8 @@
         text-align: center;
         padding:10px;
     }
+    .hero img{
+        width: 200px;
+    }
     
 }
