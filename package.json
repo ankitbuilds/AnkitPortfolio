@@ -7,7 +7,9 @@
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+    
   },
   "dependencies": {
     "aos": "^2.3.4",
