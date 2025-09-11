@@ -7,8 +7,8 @@
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "start": "npm run start",
+    "build": "vite build"
     
   },
   "dependencies": {
