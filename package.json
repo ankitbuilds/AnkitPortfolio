@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "dependencies": {
     "aos": "^2.3.4",
