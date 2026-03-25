@@ -1,53 +1,125 @@
-*{
-    font-family:'Times New Roman', Times, serif;
-}
-.hero{
-    display:flex;
+.hero {
+    display: flex;
     align-items: center;
     flex-direction: column;
-    gap:15px;
-    /* height:100vh; */
+    gap: 20px;
+    padding: 80px 5% 50px;
+    min-height: calc(100vh - 80px); /* adjust for sticky navbar */
+    justify-content: center;
 }
-.hero h1{
-    margin-bottom:0;
-    text-align:center;
-    width:60%;
-    font-size:60px;
-    font-weight:900;
+
+.hero img {
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: float 6s ease-in-out infinite;
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.5);
+    border: 4px solid var(--border-color);
 }
-.hero p{
-    width:50%;
-    text-align:center;
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
 }
-.hero-action{
-    display:flex;
-    gap:10px;
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    width: 75%;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
-.connect-me,.my-resume{
-    padding: 15px;
-    background-color:#246475;
-    font-size:15px;
-    border-radius: 10px;
-    cursor:pointer;
+
+.hero h1 span {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
-.connect-me span{
-    background-color:#246475;
+
+.hero p {
+    font-size: 20px;
+    color: var(--text-muted);
+    width: 60%;
+    text-align: center;
+    line-height: 1.6;
 }
-@media(max-width: 768px){
-    .hero h1{
-        font-size: 20px;
+
+.hero-action {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.connect-me {
+    padding: 16px 36px;
+    background: var(--accent-gradient);
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+}
+
+.connect-me:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 210, 255, 0.5);
+}
+
+.my-resume {
+    padding: 14px 34px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.my-resume:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+    transform: scale(1.05);
+}
+
+@media(max-width: 900px) {
+    .hero {
+        padding-top: 50px;
     }
-    .hero p{
+    .hero img {
+        width: 220px;
+    }
+    .hero h1 {
+        font-size: 40px;
+        width: 90%;
+    }
+    .hero p {
+        font-size: 18px;
+        width: 85%;
+    }
+}
+
+@media(max-width: 500px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero p {
         font-size: 16px;
-        width: 75%;
+        width: 95%;
     }
-    .connect-me,.my-resume{
-        font-size: 12px;
+    .hero-action {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    .connect-me, .my-resume {
+        width: 80%;
         text-align: center;
-        padding:10px;
     }
-    .hero img{
-        width: 200px;
-    }
-    
 }
