@@ -1,131 +1,124 @@
 .Navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  background: rgba(15, 23, 42, 0.85); /* Glassmorphism bg */
-  backdrop-filter: blur(12px);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid var(--border-color);
-  transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition-slow);
 }
 
 .Nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
 }
 
-.anchor-link {
-  text-decoration: none;
-  cursor: pointer;
-  position: relative;
+.Nav-menu li p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+    position: relative;
+    transition: var(--transition-fast);
 }
 
-.anchor-link p {
-  color: var(--text-main);
-  font-size: 18px;
-  font-weight: 500;
-  transition: color 0.3s;
-  background-color: transparent !important;
-  margin: 0;
-  padding: 0;
+.Nav-menu li p::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: var(--accent-gradient);
+    transition: var(--transition-fast);
 }
 
-.anchor-link p:hover {
-  color: var(--accent-primary);
+.Nav-menu li p:hover {
+    color: var(--secondary);
 }
 
-/* Animated underline for Nav items */
-.anchor-link p::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
-  transition: width 0.3s ease;
-}
-
-.anchor-link p:hover::after {
-  width: 100%;
+.Nav-menu li p:hover::after {
+    width: 100%;
 }
 
 .connect {
-  padding: 12px 25px;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
-  color: #fff;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
+    padding: 12px 24px;
+    background: var(--accent-gradient);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+    color: white;
 }
 
 .connect:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 210, 255, 0.5);
 }
 
-.connect .anchor-link span {
-  font-size: 16px;
-  font-weight: 600;
-  background: transparent;
-  color: #fff;
+.anchor-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .nav-mob-close, .nav-mob-open {
-  display: none;
-  cursor: pointer;
+    display: none;
 }
 
-@media(max-width: 768px) {
-  .Navbar {
-    padding: 15px 5%;
-  }
-  
-  .nav-mob-open {
-    display: block;
-    position: absolute;
-    right: 30px;
-  }
-  
-  .nav-mob-close {
-    display: block;
-    align-self: flex-end;
-    margin: 20px;
-    width: 24px;
-  }
-  
-  .connect {
-    display: none;
-  }
+@media(max-width: 900px) {
+    .Navbar {
+        padding: 15px 5%;
+    }
+    
+    .nav-mob-open {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .nav-mob-close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 2001;
+    }
+    
+    .connect {
+        display: none;
+    }
 
-  .Nav-menu {
-    position: fixed;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 2000;
-    transition: right 0.4s ease;
-    gap: 30px;
-    top: 0;
-    right: -350px;
-    width: 300px;
-    height: 100vh;
-    background-color: var(--bg-secondary);
-    box-shadow: -10px 0 20px rgba(0,0,0,0.5);
-    padding-top: 20px;
-  }
-
-  .Nav-menu li {
-    padding-left: 40px;
-    width: 100%;
-  }
-
-  .anchor-link p {
-    font-size: 20px;
-    padding-left: 0 !important;
-  }
+    .Nav-menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 2000;
+        transition: right 0.5s ease;
+        gap: 30px;
+        top: 0;
+        right: -350px;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--bg-color);
+        padding: 80px 40px;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
+        border-left: 1px solid var(--border-color);
+    }
+    
+    .Nav-menu li p {
+        font-size: 24px;
+    }
 }
