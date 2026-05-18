@@ -6,7 +6,7 @@ import profile from '../../assets/pic4.png'
 const Hero = () => {
   const [menu, setMenu]=useState("contact");
   const handleClick = () => {
-    window.open('/Ankit-Resume.pdf', '_blank');
+    window.open('/Ankit-Mishra-Resume.pdf', '_blank');
   };
   return (
     <div id="home" className="hero"  data-aos="fade-up">
